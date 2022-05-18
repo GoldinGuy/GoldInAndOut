@@ -4,7 +4,7 @@ from typing import List
 
 
 """ VERSION NUMBER """
-VERSION_NUMBER: str = '1.17.0'
+VERSION_NUMBER: str = '1.18.1'
 
 """
 WORKFLOW METADATA 
@@ -62,11 +62,7 @@ WORKFLOWS: List[WorkflowObj] = [
             {
                 "title": "distance threshold (px)",
                 "placeholder": "27"
-            },
-            {
-             "title": "number of clusters",
-             "placeholder": "None"
-             }
+            }
         ]
     },
     {
@@ -87,9 +83,6 @@ WORKFLOWS: List[WorkflowObj] = [
             {
                 "title": "distance threshold (px)",
                 "placeholder": "27"
-            },
-            {"title": "number of clusters",
-             "placeholder": "None"
             },
             {
                 "title": "minimum clust size",
@@ -120,6 +113,10 @@ WORKFLOWS: List[WorkflowObj] = [
                 "title": "step size (px)",
                 "placeholder": "60"
             },
+            {
+                "title": "initial radius (px)",
+                "placeholder": "50"
+            }
         ]
     },
     {
@@ -135,7 +132,12 @@ WORKFLOWS: List[WorkflowObj] = [
             "y_label": "Number of Particles",
             "x_type": "dist"
         },
-        "props": []
+        "props": [
+            {
+                "title": "A* (around landmarks)",
+                "placeholder": "0"
+            }
+        ]
     },
 ]
 
